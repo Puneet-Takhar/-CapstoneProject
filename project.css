@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #0a0c0f;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+
+.hero {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 2rem auto;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Plus Jakarta Sans;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: center;
+
+}
+
+
+.services {
+    padding: 4rem 5%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    font-family: Plus Jakarta Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    justify-content: start;
+   
+
+}
+
+.service-item {
+    color: rgba(255, 255, 255, 0.7);
+    display: inline;
+    justify-content: end;
+    flex-wrap: nowrap;
+    align-items: end;
+    text-align: left;
+
+}
+
+.materials {
+    padding: 4rem 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.028) ;
+    border:1px solid rgba(255, 255, 255, 0.2);
+}
+
+.materials-image {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.materials-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.materials-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: Plus Jakarta Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+
+
+}
+
+.materials-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+
+.living-systems {
+    padding: 4rem 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    background: radial-gradient(184.11% 185.17% at 28.27% 7.59%, rgba(8, 15, 23, 0.7) 37.83%, rgba(163, 210, 96, 0.042) 100%) ;
+
+}
+
+.living-systems-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 68px;
+    text-align: left;
+
+}
+
+.living-systems-content p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #82c91e;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.testimonials {
+    padding: 4rem 5%;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+}
+
+.testimonial-text {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+footer {
+    padding: 2rem 5%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .materials,
+    .living-systems {
+        grid-template-columns: 1fr;
+    }
+
+    .materials-content,
+    .living-systems-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
